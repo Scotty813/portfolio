@@ -1,0 +1,81 @@
+html, body {
+	color: #4c4c4c;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+.back-btn:link,
+.back-btn:visited {
+    font-size: 95%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.back-btn:hover,
+.back-btn:active {
+    background-color: white;
+    color: #87D37C;
+}
+
+.back-btn-full:link,
+.back-btn-full:visited {
+    background-color: #87D37C;
+    border: 1px solid #87D37C;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.back-btn-full:hover,
+.back-btn-full:active {
+    border: 1px solid #87D37C;
+}
+
+#mainB {
+	border-top: 1px solid #7d8484; 
+	border-bottom: 1px solid #7d8484; 
+	/*padding: 10px;*/
+	/*padding-bottom: 0;*/
+	background-color: #e4e4e4;  
+}
+
+#mainSentence, #modifier {
+	margin-right: 30px;
+}
+
+h1 {
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+img{
+	display: block;
+	margin: 20px auto;
+}
+
+.btn-list {
+	display: block;
+	margin: 10px;
+}
+
+#errorM {
+	margin-bottom: 0;
+}
+
+#mainL p {
+    text-align: right;
+    margin-right: 25px;
+}
+
+#mainR p {
+    
+}

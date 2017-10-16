@@ -1,0 +1,124 @@
+
+/* 995px - 771px */
+@media only screen and (max-width: 995px) {
+    body {
+        font-size: 18px;
+    }
+    nav ul li:first-child { display: none; }
+    nav ul li {
+        padding-right: 50px;
+        font-size: 90%;
+    }
+    section { padding: 50px 0; }
+    header h1 { font-size: 320%; }
+    h2:first-of-type { margin-top: 15px; }
+    h2 { font-size: 200%; }
+    h2:after {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .about img { height: 200px; }
+    .testimonial div { width: 500px; }
+    .about p { width: 75%; }
+    .work img { margin-bottom: 0; }
+    .work-img { height: 160px; }
+}
+
+/* 758px - 601px */
+@media only screen and (max-width: 758px) {
+    .work .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .work .row .span-1-of-3 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    .work-img:first-child { height: auto; }
+    .work-img { margin-bottom: 20px;}
+    .work p { 
+        margin-bottom: 0; 
+        margin-top: 10px;
+    }
+/*    .diagrammer-h3 { margin-top: 40px; }*/
+    .work-content {
+        height: 145px;
+    }
+    
+    .work-content:first-child {
+        margin-top: 10px;
+    }
+}
+
+/* 600px - 481px */
+@media only screen and (max-width: 600px) {
+    .work .row .span-1-of-3 {
+        width: 85%;
+    }
+    blockquote { 
+        font-size: 150%; 
+        padding-left: 20px;
+    }
+    blockquote:before {
+        left: 5px;
+        top: -20px;
+    }
+    cite { padding-left: 20px; }
+    .contact-form { width: 90%; }
+}
+
+/* 480px - 0px */
+@media only screen and (max-width: 480px) {
+    header { height: 80vh; }
+    header h1 { 
+        font-size: 220%;
+        letter-spacing: 1px;
+    }
+    header p:last-child { font-size: 100%;}
+    header ul { 
+        -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+        justify-content: center;
+    }
+    nav ul li {
+        font-size: 80%;
+        margin: 5px;
+    }
+    nav ul li:last-child { padding: 0;}
+    .work .row .span-1-of-3 {
+        width: 95%;
+    }
+    .diagrammer-h3 { margin-top: 0; }
+    .work-content:first-child { margin-bottom: 10px; }
+    .work img { margin-bottom: 0;  }
+    .about p { width: 90%; }
+    .about img { height: 180px; }
+    .testimonial { height: 65vh; }
+    .testimonial div { width: 90%; }
+    .testimonial div:first-child { margin-top: 15px; }
+    blockquote { font-size: 130%; }
+    label { 
+        display: inline-block;
+        padding: 5px 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
