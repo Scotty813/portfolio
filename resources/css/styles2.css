@@ -353,8 +353,9 @@ textarea {
 }
 
 input[type=submit] {
-    font-size: 90%;
     cursor: pointer;
+    font-size: 95%;
+    font-family: 'Lato', 'Arial', sans-serif;
 }
 
 /*-------------------------------*/
