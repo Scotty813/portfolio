@@ -1,0 +1,174 @@
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 3%;
+    }
+    
+    nav ul{
+        overflow-y: hidden;
+    }
+    
+    .row { 
+        padding: 0 3%;
+        overflow-x: hidden;
+    }
+}
+
+/* Small tablet to big tablets 1023px - 840px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+}
+
+/* 840px and down*/
+@media only screen and (max-width: 840px) {
+    .btn { padding: 7px 45px}
+    .testimonial-box {
+        padding: 10px;
+    }
+    .testimonial i {
+        font-size: 60px;
+    }
+    .info-border {
+        width: 700px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .info-border p {
+        width: 80%;
+    }
+}
+
+/*717px and down*/
+@media only screen and (max-width: 717px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 40px 0;
+    }
+    .left-link{
+        display: none;
+    }
+    header nav ul {
+        justify-content: center;
+        font-size: 90%;
+    }
+    h1 {
+        font-size: 330%;
+    }
+    header p {
+        font-size: 130%;
+    }
+    .testimonial .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .gallery .row:last-child {
+        padding: 0;
+    }
+    .info-border {
+        width: 90%;
+    }
+    .info p {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .info i {
+        font-size: 30px;
+        height: 40px;
+        width: 40px;
+        margin-right: 70px;
+    }
+
+    .info .span-1-of-2:first-child {
+        text-align: right;
+    }
+
+    .span-1-of-2 p:last-child {
+        margin-left: -40px;
+    }
+}
+
+/*490px and down*/
+@media only screen and (max-width: 490px) {
+    h1 { font-size: 310%; }
+    h2 { font-size: 200%; }
+    h2:after {
+        width: 70px;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu div { 
+        width: 70%;
+    }
+    .menu img:hover {
+        transform: scale(1.04);
+    }
+    .info-border {
+        width: 95%;
+    }
+    
+    .info i {
+        font-size: 25px;
+        height: 35px;
+        width: 35px;
+        margin-right: 70px;
+    }
+
+    .contact .span-1-of-2:first-child {
+        width: 40%;
+        padding-left: 40px;
+    }
+    .contact .span-1-of-2:last-child {
+        width: 60%;
+        padding-left: 30px;
+    }
+    footer i {
+        font-size: 25px;
+    }
+    footer p {
+        width: 90%;
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 { font-size: 300%; }
+    h2 { font-size: 180%; }
+    .menu div { 
+        width: 80%;
+    }
+    .info .row {
+        padding: 0;
+    }
+    .info p {
+        padding: 0px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
