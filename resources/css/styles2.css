@@ -398,7 +398,7 @@ footer ul li a {
 }
 
 .ion-social-facebook,
-.ion-ios-email,
+.ion-social-github,
 .ion-social-linkedin {
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
@@ -406,6 +406,10 @@ footer ul li a {
 
 .ion-social-facebook:hover {
     color: #3b5998;
+}
+
+.ion-social-github:hover {
+    color: white;
 }
 
 .ion-social-linkedin:hover {
