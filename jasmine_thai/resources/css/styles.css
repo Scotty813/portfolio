@@ -45,7 +45,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 360%;
+    font-size: 390%;
     margin-top: 0;
     margin-bottom: 20px
 }
@@ -101,7 +101,7 @@ header {
 }
 
 header p {
-    font-size: 150%;
+    font-size: 140%;
 }
 
 header nav {
@@ -168,7 +168,7 @@ header a:hover {
 /*-------------------------------*/
 
 .testimonial {
-    background: #f7f7f7;
+    background: #f4f4f4;
 }
 
 .testimonial-box { 
@@ -176,6 +176,10 @@ header a:hover {
     padding: 25px;
     border-radius: 10px;
     height: 100%;
+}
+
+.testimonial a {
+    color: 
 }
 
 .testimonial i {
@@ -216,7 +220,13 @@ cite {
     background: #8B0000;
     color: white;
     text-decoration: none;
+    border-bottom: none;
     margin-top: 20px;
+    transition: background .2s;
+}
+
+#testimonial-btn:hover {
+    background: #690000;
 }
 
 /*-------------------------------*/
@@ -261,6 +271,11 @@ cite {
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.info .row {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .info .row:last-of-type {
@@ -326,6 +341,10 @@ footer ul {
     list-style-type: none;
     margin-bottom: 15px;
 } 
+
+footer a {
+    color: #7e7171;
+}
 
 footer i {
     font-size: 30px;

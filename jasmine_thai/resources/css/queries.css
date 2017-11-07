@@ -1,5 +1,7 @@
-
+/* 1200px to 1023px*/
 @media only screen and (max-width: 1200px) {
+    h1 { font-size: 360%; }
+    
     .hero-text-box {
         width: 100%;
         padding: 0 3%;
