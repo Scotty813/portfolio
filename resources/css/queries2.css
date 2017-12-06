@@ -18,7 +18,7 @@
         margin-bottom: 30px;
     }
     .about img { height: 200px; }
-    .testimonial div { width: 500px; }
+    .testimonial div { width: 100%; }
     .about p { width: 75%; }
     .work img { margin-bottom: 0; }
     .work-img { height: 160px; }
@@ -62,6 +62,9 @@
     .work .row .span-1-of-3 {
         width: 85%;
     }
+    .testimonial .row {
+        width: 90%;
+    }
     blockquote { 
         font-size: 150%; 
         padding-left: 20px;
@@ -101,7 +104,7 @@
     .about p { width: 90%; }
     .about img { height: 180px; }
     .testimonial { height: 65vh; }
-    .testimonial div { width: 90%; }
+/*    .testimonial div { width: 90%; }*/
     .testimonial div:first-child { margin-top: 15px; }
     blockquote { font-size: 130%; }
     label { 

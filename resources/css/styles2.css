@@ -227,7 +227,7 @@ div.work-img .wedding {
     margin-top: 35px;
 }
 
-div.work-img .home-safe {
+div.work-img .jasmine-thai {
     margin-top: 15px;
 }
 
@@ -293,11 +293,17 @@ div.work-img .home-safe {
 }
 
 .testimonial div {
-    width: 70%;
     position: relative;
 }
 
-.quoteDiv:last-child { margin-top: 70px; }
+.testimonial .row {
+    width: 70%;
+    margin: auto;
+}
+
+.quoteDiv:last-child { 
+    margin-top: 70px; 
+}
 
 blockquote {
     font-size: 180%;
@@ -368,7 +374,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     background-color: #333;
-    height: 140px;
+    height: 160px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -392,8 +398,7 @@ footer ul {
 }
 
 footer ul li a {
-    margin: 15px;
-    padding: 5px;
+    margin: 10px;
     cursor: pointer;
     color: #d6c4c4;
 }
@@ -401,6 +406,7 @@ footer ul li a {
 .ion-social-facebook,
 .ion-social-github,
 .ion-social-linkedin {
+    padding: 10px;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
