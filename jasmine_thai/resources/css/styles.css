@@ -294,31 +294,38 @@ cite {
     margin-bottom: 40px;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #8B0000;
+    height: 47px;
+    width: 47px;
+    margin-right: 20px;
+}
+
+
 .info i {
     display: inline-block;
     font-size: 35px;
-    height: 45px;
-    width: 45px;
-    background-color: #8B0000;
-    text-align: center;
-    padding-top: 4px;
-    border-radius: 50%;
     color: white;
-    margin-right: 100px;
 }
 
-.info .span-1-of-2:first-child {
-    text-align: right;
-
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
-.info .span-1-of-2 p:last-child {
-    margin-bottom: 0;
-    margin-left: -70px
-}
-
-.contact {
-    position: static;
+.contact ul li {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 /*-------------------------------*/
