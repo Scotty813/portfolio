@@ -1,7 +1,7 @@
 //declare global vars
     var preConf = 5,
         preScore = 0,
-        elDragged = 0,
+        elDragged = 0;
         maxScore = 0;
 
     var diagram = {sent: 0, adj: 0, adv: 0};
@@ -16,7 +16,6 @@
     //focus on input when page loads
     $( document ).ready(function() {
       $( "#fname" ).focus();
-
     });     //jQuery
 
     
@@ -25,7 +24,7 @@
     function loadMainL() {
       var mainLeft = $("#mainL");
       var images = "";
-      images += "<p>Drag and drop these</p><img src='mainSentence.jpg' id='mainSentence' draggable='true' ondragstart='drag(event)' ondrop='drop(event)' ondragover='allowDrop(event)' value='1' style='width: 150px; height: 70px'><img src='modifier.jpg' id='modifier' draggable='true' value='2' ondragstart='drag(event)' ondrop='drop(event)' style='width: 150px; height: 70px'>";
+      images += "<img src='img/mainSentence.jpg' id='mainSentence' draggable='true' ondragstart='drag(event)' value='1' style='width: 150px; height: 70px'><img src='img/modifier.jpg' id='modifier' draggable='true' value='2' ondragstart='drag(event)' style='width: 150px; height: 70px'>";
       return mainLeft.html(images);
     };
 
@@ -33,7 +32,7 @@
     function loadMainR() {
       var mainRight = $("#mainR");
       var buttons = "";
-          buttons += '<p>and these!</p><button type="button" id="Red" class="slidable btn btn-primary btn-list" draggable="true" value="3" ondragstart="drag(event)"><strong>Red</strong></button>';
+          buttons += '<button type="button" id="Red" class="slidable btn btn-primary btn-list" draggable="true" value="3" ondragstart="drag(event)"><strong>Red</strong></button>';
           buttons += '<button type="button" id="Rover" class="slidable btn btn-primary btn-list" draggable="true" value="4" ondragstart="drag(event)"><strong>Rover</strong></button>';
           buttons += '<button type="button" id="Barked" class="slidable btn btn-primary btn-list" draggable="true" value="5" ondragstart="drag(event)"><strong>Barked</strong></button>';
           buttons += '<button type="button" id="Loudly" class="slidable btn btn-primary mb-4 btn-list" draggable="true" value="6" ondragstart="drag(event)"><strong>Loudly</strong></button>';
@@ -143,6 +142,7 @@
       var dropX = ev.clientX - rect.left; // x value of drop event on canvas
       var dropY = ev.clientY - rect.top; // y value of drop event on canvas
       var wordText = ev.dataTransfer.getData("text"); //grab id of button being dragged. 
+      console.log(wordText);
 
       if (choice == 1) {
         drawMainSentence(ctx, w, h);
@@ -166,21 +166,14 @@
     };
 
     function allowDrop(ev) {
-        ev.preventDefault();
+    ev.preventDefault();
     };
 
     function drag(ev) {
         elDragged = ev.target.getAttribute("value");
-        ev.dataTransfer.setData("text/plain", ev.target.id); //grabs id of item being dragged
+        ev.dataTransfer.setData("text", ev.target.id); //grabs id of item being dragged
     };
-      
-    
-      
-    function drop(ev) {
-        ev.preventDefault();
-        return false;
-    }  
-      
+
     function drawMainSentence(ctx, w, h) {
       if (diagram.sent) {
           document.getElementById("errorM").innerHTML =
@@ -414,6 +407,12 @@
     };
 
     function resetAll() {
-          $("#errorM").hide();
+          //**SEE COMMENTS IN DISPLAYDIAGRAM
+          // -----------------------------------
+          // for(var key in diagram) {  //cycles through diagram and resets all to 0
+          //     diagram[key] = 0;
+          // }  
+          // proposal = ["", "", "", ""]; //clears out proposal array
+          $("#errorM").hide(); //jQuery
           return displayDiagram();
     };

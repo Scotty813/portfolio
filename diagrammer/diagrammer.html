@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <title>Sentence Diagrammer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+
+  <body>
+        <div id="header">
+          <h1 class="display-4"><strong>Welcome to the Sentence Diagrammer!</strong></h1>
+          <h2 class="lead">You can practice your diagramming skills here</h2>
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div id="mainL" class="col-3">
+
+            </div>
+
+            <div id="mainB" class="col-6">
+                <form action="#" method="post" onsubmit="return validName()">
+                  <p class="mt-2">Please tell us your name:</p>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p id="error" class="text-danger font-weight-bold mt-3"></p>
+            </div>
+
+            <div id="mainR" class="col-3">
+
+            </div>
+        </div> <!-- end row -->
+
+  </body>
+</html>
